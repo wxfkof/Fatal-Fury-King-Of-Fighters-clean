@@ -1,5 +1,5 @@
-#ifndef __ModuleBackground_H__
-#define __ModuleBackground_H__
+#ifndef __ModuleScenePaoPao_H__
+#define __ModuleScenePaoPao_H__
 
 #include "Module.h"
 #include "Animation.h"
@@ -7,14 +7,16 @@
 
 struct SDL_Texture;
 
-class ModuleBackground : public Module
+class ModuleScenePaoPao : public Module
 {
 public:
-	ModuleBackground();
-	~ModuleBackground();
+	ModuleScenePaoPao();
+	~ModuleScenePaoPao();
 
 	bool Start();
 	update_status Update();
+	bool CleanUp();
+
 
 public:
 	
