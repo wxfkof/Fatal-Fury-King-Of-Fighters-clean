@@ -1,5 +1,5 @@
-#ifndef __ModulFFIntro_H__
-#define __ModulFFIntro_H__
+#ifndef __ModulFFIntro2_H__
+#define __ModulFFIntro2_H__
 
 #include "Module.h"
 #include "Animation.h"
@@ -9,11 +9,11 @@
 
 struct SDL_Texture;
 
-class ModuleFFIntro : public Module
+class ModuleFFIntro2 : public Module
 {
 public:
-	ModuleFFIntro();
-	~ModuleFFIntro();
+	ModuleFFIntro2();
+	~ModuleFFIntro2();
 
 	bool Start();
 	update_status Update();
@@ -23,16 +23,14 @@ public:
 public:
 
 	SDL_Texture * graphics = nullptr;
-	SDL_Rect introwin;
-	SDL_Rect rock;
+	SDL_Rect introwin2;
+	SDL_Rect taxi;
 	Animation start;
-	Animation player;
-	
+	Animation player2;
 	Mix_Music* introsong;
-	/*iPoint positionplayer;
-	iPoint positionrock;*/
+	/*iPoint positiontaxi;
+	iPoint positionplayer2;*/
 
 };
 
-
-#endif // __ModulFFIntros_H__
+#endif // __ModulFFIntros2_H__
