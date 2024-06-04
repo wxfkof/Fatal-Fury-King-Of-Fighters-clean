@@ -65,8 +65,8 @@ bool ModuleNeogeo::Start()
 {
 	LOG("Loading image assets");
 	bool ret = true;
-	graphics = App->textures->Load("Source/UI/Intro/neogeo.png");
-	song = App->audio->LoadMusic("Source/Sound/Music/neogeo.ogg");
+	graphics = App->textures->Load("Resource/UI/Intro/neogeo.png");
+	song = App->audio->LoadMusic("Resource/Sound/Music/neogeo.ogg");
 	App->audio->PlayMusic(song);
 	return ret;
 

@@ -155,16 +155,16 @@ bool ModuleUI::Start()
 	bool ret = true;
 
 	//Loading SpriteSheet, fonts and music
-	graphics = App->textures->Load("Source/UI/combatui/ui.png");
-	titles = App->textures->Load("Source/UI/combatui/combatupdate.png");
-	countdown = App->fonts->Load("Source/UI/fonts/marcador.png", "0123456789", 1);
-	scorefont = App->fonts->Load("Source/UI/fonts/Score_font.png", "-0123456789abcdefghijklmnopqrstuvwxyz", 1);
+	graphics = App->textures->Load("Resource/UI/combatui/ui.png");
+	titles = App->textures->Load("Resource/UI/combatui/combatupdate.png");
+	countdown = App->fonts->Load("Resource/UI/fonts/marcador.png", "0123456789", 1);
+	scorefont = App->fonts->Load("Resource/UI/fonts/Score_font.png", "-0123456789abcdefghijklmnopqrstuvwxyz", 1);
 
 	//FX
-	finalcountdown = App->audio->LoadFX("Source/Sound/FX/FX/FX_ClockCountdown.wav");
-	timeout = App->audio->LoadFX("Source/Sound/FX/FX/FX_Timeout.wav");
-	readyfx = App->audio->LoadFX("Source/Sound/FX/FX/FX_ReadyVoice.wav");
-	fightfx = App->audio->LoadFX("Source/Sound/FX/FX/FX_FightVoice.wav");
+	finalcountdown = App->audio->LoadFX("Resource/Sound/FX/FX/FX_ClockCountdown.wav");
+	timeout = App->audio->LoadFX("Resource/Sound/FX/FX/FX_Timeout.wav");
+	readyfx = App->audio->LoadFX("Resource/Sound/FX/FX/FX_ReadyVoice.wav");
+	fightfx = App->audio->LoadFX("Resource/Sound/FX/FX/FX_FightVoice.wav");
 	Mix_VolumeChunk(fightfx, 200);
 	
 //We set time on 94s

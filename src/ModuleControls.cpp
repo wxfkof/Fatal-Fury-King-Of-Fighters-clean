@@ -74,8 +74,8 @@ bool ModuleControls::Start()
 	animationState = Enter;
 	step = 0;*/
 
-	graphics = App->textures->Load("Source/UI/Intro/controls.png");
-	introsong = App->audio->LoadMusic("Source/Sound/Music/Opening.ogg");
+	graphics = App->textures->Load("Resource/UI/Intro/controls.png");
+	introsong = App->audio->LoadMusic("Resource/Sound/Music/Opening.ogg");
 
 	App->audio->PlayMusic(introsong);
 	App->render->camera.x = 0;

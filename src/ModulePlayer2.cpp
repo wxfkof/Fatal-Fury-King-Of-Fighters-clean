@@ -296,9 +296,9 @@ bool ModulePlayer2::Start()
 	colcreated = true;
 	Activesm1 = true;
 
-	graphics = App->textures->Load("Source/Sprites/Character_Sprites/Andy_Bogard/andy.png");
-	Kick = App->audio->LoadFX("Source/Sound/FX/Voice/Attacks/Kick.wav");
-	Punch = App->audio->LoadFX("Source/Sound/FX/Voice/Attacks/Punch.wav");
+	graphics = App->textures->Load("Resource/Sprites/Character_Sprites/Andy_Bogard/andy.png");
+	Kick = App->audio->LoadFX("Resource/Sound/FX/Voice/Attacks/Kick.wav");
+	Punch = App->audio->LoadFX("Resource/Sound/FX/Voice/Attacks/Punch.wav");
 
 	position.x = 200;
 	position.y = 220;

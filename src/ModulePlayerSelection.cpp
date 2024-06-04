@@ -71,12 +71,12 @@ bool ModulePlayerSelection::Start()
 	bool ret = true;
 
 	//Loading Map Assets Texture
-	graphics = App->textures->Load("Source/UI/Player_Map_Selection/SpriteSheet_PlayerSelection.png"); 
+	graphics = App->textures->Load("Resource/UI/Player_Map_Selection/SpriteSheet_PlayerSelection.png"); 
 
 	//Loading Music and FX
-	song = App->audio->LoadMusic("Source/Sound/Music/CharacterSelection.ogg");
-	choosefx = App->audio->LoadFX("Source/Sound/FX/FX/FX_ChooseSelection.wav");
-	hoverfx = App->audio->LoadFX("Source/Sound/FX/FX/FX_SelectHover.wav");
+	song = App->audio->LoadMusic("Resource/Sound/Music/CharacterSelection.ogg");
+	choosefx = App->audio->LoadFX("Resource/Sound/FX/FX/FX_ChooseSelection.wav");
+	hoverfx = App->audio->LoadFX("Resource/Sound/FX/FX/FX_SelectHover.wav");
 	App->audio->PlayMusic(song);
 
 	App->render->camera.x = 0;

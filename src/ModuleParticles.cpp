@@ -26,7 +26,7 @@ bool ModuleParticles::Start()
 {
 	LOG("Loading particles");
 	//App->player->forplayer = true;
-	graphics = App->textures->Load("Source/Sprites/Character_Sprites/Andy_Bogard/andy.png");
+	graphics = App->textures->Load("Resource/Sprites/Character_Sprites/Andy_Bogard/andy.png");
 
 	// Special1
 	andyspecial1.anim.PushBack({ 327, 355, 23, 46 });
@@ -107,7 +107,7 @@ update_status ModuleParticles::Update()
 				p->fx_played = true;
 				
 				//SPECIAL ATTACK HISHOKEN FX
-				fx = App->audio->LoadFX("Source/Sound/FX/Voice/SpecialAttacks/Hishoken.wav");
+				fx = App->audio->LoadFX("Resource/Sound/FX/Voice/SpecialAttacks/Hishoken.wav");
 				App->audio->PlayFX(fx);
 				Mix_VolumeChunk(fx, 256);
 
@@ -126,7 +126,7 @@ update_status ModuleParticles::Update()
 				p->fx_played = true;
 
 				//SPECIAL ATTACK HISHOKEN FX
-				fx = App->audio->LoadFX("Source/Sound/FX/Voice/SpecialAttacks/Hishoken.wav");
+				fx = App->audio->LoadFX("Resource/Sound/FX/Voice/SpecialAttacks/Hishoken.wav");
 				App->audio->PlayFX(fx);
 				Mix_VolumeChunk(fx, 120);
 

@@ -37,10 +37,10 @@ bool ModuleP2Wins::Start()
 	bool ret = true;
 
 	//Loading Music
-	music = App->audio->LoadMusic("Source/Sound/Music/winner.ogg");
+	music = App->audio->LoadMusic("Resource/Sound/Music/winner.ogg");
 	
 	//Loading Textures
-	graphics = App->textures->Load("Source/UI/WinLose/Background2.png");
+	graphics = App->textures->Load("Resource/UI/WinLose/Background2.png");
 
 	//Enabling audio
 	App->audio->PlayMusic(music);

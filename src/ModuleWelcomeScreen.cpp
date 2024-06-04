@@ -47,8 +47,8 @@ bool ModuleWelcomeScreen::Start()
 {
 	LOG("Loading image assets");
 	bool ret = true;
-	graphics = App->textures->Load("Source/UI/Intro/intro.png");
-	song = App->audio->LoadMusic("Source/Sound/Music/Opening.ogg");
+	graphics = App->textures->Load("Resource/UI/Intro/intro.png");
+	song = App->audio->LoadMusic("Resource/Sound/Music/Opening.ogg");
 	App->audio->PlayMusic(song);
 
 	App->render->camera.x = 0;

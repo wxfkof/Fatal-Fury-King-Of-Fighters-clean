@@ -62,8 +62,8 @@ bool ModuleFFIntro2::Start()
 {
 	LOG("Loading image assets");
 	bool ret = true;
-	graphics = App->textures->Load("Source/UI/Intro/intro2.png");
-	introsong = App->audio->LoadMusic("Source/Sound/Music/Opening.ogg");
+	graphics = App->textures->Load("Resource/UI/Intro/intro2.png");
+	introsong = App->audio->LoadMusic("Resource/Sound/Music/Opening.ogg");
 	App->audio->PlayMusic(introsong);
 	return ret;
 

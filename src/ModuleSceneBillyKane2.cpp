@@ -72,8 +72,8 @@ bool ModuleBillyKane2::Start()
 
 	//Loading Assets
 	LOG("Loading BillyKane2 [2] Assets");
-	music = App->audio->LoadMusic("Source/Sound/Music/billy.ogg");
-	graphics = App->textures->Load("Source/Sprites/Stage_Sprites/Billy_Kane_map/Background.png");
+	music = App->audio->LoadMusic("Resource/Sound/Music/billy.ogg");
+	graphics = App->textures->Load("Resource/Sprites/Stage_Sprites/Billy_Kane_map/Background.png");
 
 	//Playing Music
 	App->audio->PlayMusic(music);

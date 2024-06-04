@@ -39,10 +39,10 @@ bool ModuleP1Wins::Start()
 	bool ret = true;
 
 	//Texture Loaded
-	graphics = App->textures->Load("Source/UI/WinLose/Background.png");
+	graphics = App->textures->Load("Resource/UI/WinLose/Background.png");
 
 	//Loading Music
-	music = App->audio->LoadMusic("Source/Sound/Music/winner.ogg");
+	music = App->audio->LoadMusic("Resource/Sound/Music/winner.ogg");
 
 	//Enabling audio
 	App->audio->PlayMusic(music);

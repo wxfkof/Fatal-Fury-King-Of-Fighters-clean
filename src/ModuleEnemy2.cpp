@@ -301,11 +301,11 @@ bool ModuleEnemy2::Start()
 	bool ret = true;
 	colcreated = true;
 	Activesm1 = true;
-	graphics = App->textures->Load("Source/Sprites/Character_Sprites/Andy_Bogard/andy2.png");
+	graphics = App->textures->Load("Resource/Sprites/Character_Sprites/Andy_Bogard/andy2.png");
 
-	Kick = App->audio->LoadFX("Source/Sound/FX/Voice/Attacks/Kick.wav");
-	Punch = App->audio->LoadFX("Source/Sound/FX/Voice/Attacks/Punch.wav");
-	Specialattack = App->audio->LoadFX("Source/Sound/FX/Voice/SpecialAttacks/PoweWave.wav");
+	Kick = App->audio->LoadFX("Resource/Sound/FX/Voice/Attacks/Kick.wav");
+	Punch = App->audio->LoadFX("Resource/Sound/FX/Voice/Attacks/Punch.wav");
+	Specialattack = App->audio->LoadFX("Resource/Sound/FX/Voice/SpecialAttacks/PoweWave.wav");
 
 	position.x = 330;
 	position.y = 220;
